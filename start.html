@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Excercise Form</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>My Form exercise</h1>
+      <section class="Form-section">
+        <form action="">
+          <label for="e-mail"
+            >E-Mail :
+            <abbr title="required">*</abbr>
+          </label>
+          <input
+            autofocus
+            type="email"
+            name="e-mail"
+            required
+            placeholder="E.g. example@gmail.com"
+          />
+          <label for="password"
+            >Password :
+            <abbr title="required">*</abbr>
+          </label>
+          <input
+            type="password"
+            name="password"
+            required
+            placeholder="minimum 8 characters"
+            minlength="8"
+            maxlength="20"
+          />
+          <label for="first-name">
+            First Name :
+            <abbr title="required">*</abbr>
+          </label>
+          <input
+            type="text"
+            name="first-name"
+            required
+            maxlength="25"
+            pattern="[a-zA-Z]+"
+          />
+          <label for="last-name"
+            >Last Name :
+            <abbr title="required">*</abbr>
+          </label>
+          <input
+            type="text"
+            name="last-name"
+            required
+            maxlength="25"
+            pattern="[a-zA-Z]+"
+          />
+          <label for="date-of-birth">Date of Birth : </label>
+          <input type="date" name="date-of-birth" />
+          <label for="tel-num">Your Phone Number : </label>
+          <input
+            type="tel"
+            name="telephone-number"
+            id="tel-num"
+            maxlength="13"
+            placeholder="E.g +393501320546"
+          />
+          <label for="plan-selected"
+            >Choose your plan :
+            <abbr title="required">*</abbr>
+          </label>
+          <select name="plan-selected" required>
+            <option value="free">Free Plan</option>
+            <option value="basic">Basic Plan $4.99</option>
+            <option value="Silver">Silver Plan $9.99</option>
+            <option value="gold">Gold Plan $19.99</option>
+          </select>
+
+          <label for="pro-plan">Choose now our Pro plan! $29.99 </label>
+
+          <input
+            type="checkbox"
+            name="pro-plan"
+            id="pro-plan"
+            value="Activated"
+          />
+
+          <label for="credit-card-number"
+            >Your Credit card number :
+            <abbr title="required">*</abbr>
+          </label>
+          <!-- Using min e max for validate the credit card number as a real credit card -->
+          <input
+            type="text"
+            required
+            pattern="[0-9]+"
+            minlength="13"
+            maxlength="16"
+            placeholder="E.g. 533317101556xxxx"
+          />
+          <label for="cvc"
+            >CVC card number :
+            <abbr title="required">*</abbr>
+          </label>
+          <input
+            type="text"
+            required
+            name="cvc"
+            id="cvc"
+            pattern="[0-9]+"
+            maxlength="3"
+            minlength="3"
+          />
+          <label for="expiration-date"
+            >Expiration date
+            <abbr title="required">*</abbr>
+          </label>
+          <input
+            type="text"
+            name="expiration-date"
+            id="expiration-date"
+            required
+            pattern="[0-9/]+"
+            placeholder="MM/YY"
+            maxlength="5"
+          />
+          <label for="billing-address"
+            >Billing Address :
+            <abbr title="required">*</abbr>
+          </label>
+          <input
+            type="text"
+            name="billing-address"
+            id="billing-address"
+            pattern="[a-zA-Z0-9]+"
+            required
+            placeholder="E.g. Street example n. 5"
+          />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
