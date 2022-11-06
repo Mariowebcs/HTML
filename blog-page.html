@@ -4,9 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Blog-page">
-    <meta name="description" content="Blog page about some programming content">
-    <meta name="og:title" content="Blog-page">
+    <meta name="title" content="Blog-page" />
+    <meta
+      name="description"
+      content="Blog page about some programming content"
+    />
+    <meta name="author" content="Mario D'Andrea" />
+    <meta property="og:title" content="Blog-page" />
+    <meta
+      property="og.description"
+      content="Blog page about some programming content"
+    />
+    <meta property="og:image" content="html-code.jpg" />
     <title>Blog Page</title>
     <style>
       body {
@@ -63,7 +72,7 @@
                 html-code.jpg  480w,
                 html-code.jpg  240w
               "
-              sizes="(max-width : 600px)100vw,50vw"
+              sizes="(max-width : 600px)100vw"
               src="html-code.jpg"
               alt="A bunch of html code"
             />
@@ -113,6 +122,25 @@
         <section>
           <div>
             <h3>Article Title 2</h3>
+            <figure>
+              <figcaption>
+                I'm doing my job with love for create awesome website!
+              </figcaption>
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    web-development.jpg    1920w,
+                    web-development-2x.jpg  960w
+                  "
+                />
+                <source srcset="web-development-mobile.jpg" />
+                <img
+                  src="web-development.jpg"
+                  alt="while working as a  web developer"
+                />
+              </picture>
+            </figure>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elite. neque ut
               aperiam esse provident? Nihil exercitationem la doloribus animi
@@ -155,7 +183,7 @@
       <section class="sub-form">
         <div>
           <h2>Get In Touch</h2>
-          <h3>Stay tuned for have the latest mews and offers for you!</h3>
+          <h3>Stay tuned for have the latest news and offers for you!</h3>
           <p>
             Subscibe now to receive the quote for the creation of your fantastic
             website.
